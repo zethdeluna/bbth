@@ -292,6 +292,9 @@ ul {
             button:active {
                 color: inherit;
             }
+            button:focus {
+                outline: none;
+            }
             button > i {
                 pointer-events: none;
             }
