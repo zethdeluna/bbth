@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/bbth/static/css/main.99cce716.chunk.css",
-    "main.js": "/bbth/static/js/main.96ff5dfd.chunk.js",
-    "main.js.map": "/bbth/static/js/main.96ff5dfd.chunk.js.map",
-    "runtime-main.js": "/bbth/static/js/runtime-main.fb0e7131.js",
-    "runtime-main.js.map": "/bbth/static/js/runtime-main.fb0e7131.js.map",
-    "static/js/2.792ffb0c.chunk.js": "/bbth/static/js/2.792ffb0c.chunk.js",
-    "static/js/2.792ffb0c.chunk.js.map": "/bbth/static/js/2.792ffb0c.chunk.js.map",
-    "static/js/3.f20f66f6.chunk.js": "/bbth/static/js/3.f20f66f6.chunk.js",
-    "static/js/3.f20f66f6.chunk.js.map": "/bbth/static/js/3.f20f66f6.chunk.js.map",
+    "main.css": "/bbth/static/css/main.98c58261.chunk.css",
+    "main.js": "/bbth/static/js/main.179217a8.chunk.js",
+    "main.js.map": "/bbth/static/js/main.179217a8.chunk.js.map",
+    "runtime-main.js": "/bbth/static/js/runtime-main.b85100ff.js",
+    "runtime-main.js.map": "/bbth/static/js/runtime-main.b85100ff.js.map",
+    "static/js/2.dd528691.chunk.js": "/bbth/static/js/2.dd528691.chunk.js",
+    "static/js/2.dd528691.chunk.js.map": "/bbth/static/js/2.dd528691.chunk.js.map",
+    "static/js/3.7474b83d.chunk.js": "/bbth/static/js/3.7474b83d.chunk.js",
+    "static/js/3.7474b83d.chunk.js.map": "/bbth/static/js/3.7474b83d.chunk.js.map",
     "index.html": "/bbth/index.html",
-    "static/css/main.99cce716.chunk.css.map": "/bbth/static/css/main.99cce716.chunk.css.map",
-    "static/js/2.792ffb0c.chunk.js.LICENSE.txt": "/bbth/static/js/2.792ffb0c.chunk.js.LICENSE.txt",
+    "static/css/main.98c58261.chunk.css.map": "/bbth/static/css/main.98c58261.chunk.css.map",
+    "static/js/2.dd528691.chunk.js.LICENSE.txt": "/bbth/static/js/2.dd528691.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/bbth/static/media/JosefinSans-Regular.c2462bfe.ttf",
-    "static/media/bonbonlogo.00e6ba39.png": "/bbth/static/media/bonbonlogo.00e6ba39.png"
+    "static/media/bonbonlogo.00e6ba39.png": "/bbth/static/media/bonbonlogo.00e6ba39.png",
+    "static/media/sfvMap.7a1ccbd0.png": "/bbth/static/media/sfvMap.7a1ccbd0.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.fb0e7131.js",
-    "static/js/2.792ffb0c.chunk.js",
-    "static/css/main.99cce716.chunk.css",
-    "static/js/main.96ff5dfd.chunk.js"
+    "static/js/runtime-main.b85100ff.js",
+    "static/js/2.dd528691.chunk.js",
+    "static/css/main.98c58261.chunk.css",
+    "static/js/main.179217a8.chunk.js"
   ]
 }
