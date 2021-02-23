@@ -42,6 +42,7 @@ class App extends Component {
     
     // cursor effect on hover over links
     const cursor = document.querySelector('.cursor:nth-child(2)')
+    const cursorClick = document.querySelector('.cursor:nth-child(1)')
     const links = document.querySelectorAll('a,button')
 
     links.forEach(link => {
@@ -50,6 +51,13 @@ class App extends Component {
       })
       link.addEventListener('mouseout', e => {
         cursor.classList.remove('enlarged')
+      })
+      
+      document.addEventListener('mousedown', e => {
+        cursorClick.classList.add('clicked')
+      })
+      document.addEventListener('mouseup', e => {
+        cursorClick.classList.remove('clicked')
       })
     })
     return (

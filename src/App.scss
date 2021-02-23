@@ -423,7 +423,8 @@ ul {
     border-radius: 50%;
     transition: 
       width 400ms ease,
-      height 400ms ease;
+      height 400ms ease,
+      opacity 400ms ease;
   }
   .cursors .cursor:nth-child(1) {
     background-color: black;
@@ -441,4 +442,8 @@ ul {
   .cursor:nth-child(2).enlarged {
     height: 50px;
     width: 50px;
+  }
+  .cursor:nth-child(1).clicked {
+    height: 24px;
+    width: 24px;
   }
