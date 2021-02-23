@@ -20,6 +20,7 @@ function Menu() {
             <div id="add-ons">
                 <AddOns/>
             </div>
+            <br/><br/><br/><br/>
         </div>
     )
 }
