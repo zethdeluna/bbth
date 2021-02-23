@@ -4,7 +4,7 @@ import bonbonlogo from './images/bonbonlogo.png';
 
 function Navigation() {
     return (
-        <div id="navbar" className="fade-in-navbar">
+        <div id="navbar" className="fade-in-homepage">
             <div id="main-name">
                 <h1><AnchorLink href="#homepage">Bon Bon Tea House</AnchorLink></h1>
             </div>
