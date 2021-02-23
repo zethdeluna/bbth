@@ -52,13 +52,12 @@ class App extends Component {
       link.addEventListener('mouseout', e => {
         cursor.classList.remove('enlarged')
       })
-      
-      // document.addEventListener('mousedown', e => {
-      //   cursorClick.classList.add('clicked')
-      // })
-      // document.addEventListener('mouseup', e => {
-      //   cursorClick.classList.remove('clicked')
-      // })
+    })
+    document.addEventListener('mousedown', e => {
+      cursorClick.classList.add('clicked')
+    })
+    document.addEventListener('mouseup', e => {
+      cursorClick.classList.remove('clicked')
     })
     return (
       <div className="App" onMouseMove={e => {this.handleMouseMove(e)}}>
