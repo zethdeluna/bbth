@@ -55,8 +55,8 @@ class App extends Component {
     return (
       <div className="App" onMouseMove={e => {this.handleMouseMove(e)}}>
         <div className="cursors">
-          <div className="cursor fade-in-navbar" style={{left: xMain, top: yMain}}/>
-          <div className="cursor fade-in-navbar" style={{left: xTrailing, top: yTrailing}}/>
+          <div className="cursor fade-in-homepage" style={{left: xMain, top: yMain}}/>
+          <div className="cursor fade-in-homepage" style={{left: xTrailing, top: yTrailing}}/>
         </div>
         <Homepage/>
         <Menu/>
