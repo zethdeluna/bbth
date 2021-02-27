@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 import './App.scss';
-import Homepage from './Homepage';
+import Navigation from './Navigation';
+import NavigationMobile from './NavigationMobile';
+import ImageGallery from './ImageGallery';
+import ImageGalleryMobile from './ImageGalleryMobile';
 import Menu from './Menu';
+import MenuMobile from './MenuMobile';
 import Locations from './Locations';
+import LocationsMobile from './LocationsMobile';
 
 class App extends Component {
   constructor(props) {
@@ -12,18 +17,28 @@ class App extends Component {
         xMain: 400,
         yMain: 400,
         xTrailing: 400,
-        yTrailing: 400
+        yTrailing: 400,
+        // initial state of window size
+        width: 0,
     }
+    this.updateDimensions = this.updateDimensions.bind(this);
     this.cursor = React.createRef();
     this.cursorTrailing = React.createRef();
     this.animationFrame = null;
   }
   // update cursor position on mouse move
   componentDidMount() {
+    // window size
+    this.updateDimensions();
+    window.addEventListener("resize", this.updateDimensions);
+    // cursor
     document.addEventListener('mousemove', this.onMouseMove);
     this.moveCursor();
   }
   componentWillUnmount() {
+    // window size
+    window.removeEventListener("resize", this.updateDimensions);
+    // cursor
     document.removeEventListener('mousemove', this.onMouseMove);
     cancelAnimationFrame(this.animationFrame);
   }
@@ -44,68 +59,78 @@ class App extends Component {
       yTrailing: yTrailing + yDiff / 7,
     },
     () => {
-      // usingn refs and transform for better performance
-      this.cursor.current.style.transform = `translate3d(${xMain}px, ${yMain}px, 0) translate(-50%, -50%)`;
-      this.cursorTrailing.current.style.transform = `translate3d(${xTrailing}px, ${yTrailing}px, 0) translate(-50%, -50%)`;
-      this.animationFrame = requestAnimationFrame(this.moveCursor);
+      // using refs and transform for better performance
+      if (this.cursor.current) {
+        this.cursor.current.style.transform = `translate3d(${xMain}px, ${yMain}px, 0) translate(-50%, -50%)`;
+        this.cursorTrailing.current.style.transform = `translate3d(${xTrailing}px, ${yTrailing}px, 0) translate(-50%, -50%)`;
+        this.animationFrame = requestAnimationFrame(this.moveCursor);
+      }
     });
   }
-  // handleMouseMove = (e) => {
-  //     const { clientX, clientY } = e;
 
-  //     this.setState({
-  //         xMain: clientX,
-  //         yMain: clientY
-  //     }, () => {
-  //         setTimeout(() => {
-  //             this.setState({
-  //                 xTrailing: clientX,
-  //                 yTrailing: clientY
-  //             });
-  //         }, 120);
-  //     })
-  // }
-
-  render() {
-    // const {
-    //   xMain,
-    //   yMain,
-    //   xTrailing,
-    //   yTrailing
-    // } = this.state;
-    
-    // cursor effect on hover over links
-    const cursor = document.querySelector('.cursor:nth-child(2)');
-    const cursorClick = document.querySelector('.cursor:nth-child(1)');
-    const links = document.querySelectorAll('a,button');
-
-    links.forEach(link => {
-      link.addEventListener('mouseenter', e => {
-        cursor.classList.add('enlarged');
-      })
-      link.addEventListener('mouseout', e => {
-        cursor.classList.remove('enlarged');
-      })
+  // track window size and update state
+  updateDimensions () {
+    let windowWidth = typeof window !== "undefined" ? window.innerWidth : 0;
+    this.setState({
+      width: windowWidth,
     })
+  }
 
-    window.onmousedown = () => {
-      cursorClick.classList.add('clicked');
-    }
-    window.onmouseup = () => {
-      cursorClick.classList.remove('clicked');
+  render() {    
+    const width = this.state.width;
+    let navigation, imageGallery, menu, locations;
+
+    if (width < 780) {
+      navigation = <div><NavigationMobile/></div>;
+      imageGallery = <div><ImageGalleryMobile/></div>
+      menu = (
+        <div>
+          <div style={{position: "relative", width: "100vw", height: "110vh", zIndex: "-1" }}/>
+          <MenuMobile/>
+        </div>
+      );
+      locations = <div><LocationsMobile/></div>
+    } else {
+      // cursor effect on hover over links
+      const links = document.querySelectorAll('a,button');
+
+      links.forEach(link => {
+        link.addEventListener('mouseenter', e => {
+          this.cursorTrailing.current.classList.add('enlarged');
+        })
+        link.addEventListener('mouseout', e => {
+          this.cursorTrailing.current.classList.remove('enlarged')
+        })
+      })
+
+      window.onmousedown = () => {
+        this.cursor.current.classList.add('clicked');
+      }
+      window.onmouseup = () => {
+        this.cursor.current.classList.remove('clicked');
+      }
+
+      navigation = <div><Navigation/></div>;
+
+      imageGallery = (
+        <div>
+          <div className="cursors">
+            <div className="cursor fade-in" ref={this.cursor}/>
+            <div className="cursor fade-in" ref={this.cursorTrailing}/>
+          </div>
+          <ImageGallery/>
+        </div>
+      );
+
+      menu = <div><Menu/></div>;
+      locations = <div><Locations/></div>
     }
     return (
       <div className="App">
-      {/* onMouseMove={e => {this.handleMouseMove(e)}} */}
-        <div className="cursors">
-          <div className="cursor fade-in-homepage" ref={this.cursor}/>
-          {/* style={{left: xMain, top: yMain}} */}
-          <div className="cursor fade-in-homepage" ref={this.cursorTrailing}/>
-          {/* style={{left: xTrailing, top: yTrailing}} */}
-        </div>
-        <Homepage/>
-        <Menu/>
-        <Locations/>
+        {navigation}
+        {imageGallery}
+        {menu}
+        {locations}
       </div>
     );
   }
