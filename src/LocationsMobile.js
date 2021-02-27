@@ -1,11 +1,11 @@
 import React from 'react';
 
-class LocationsMobile extends React.Component {
-    render() {
-        return (
-            <div></div>
-        )
-    }
+function LocationsMobile() {
+    return (
+        <div id="locationsMobile">
+            
+        </div>
+    )
 }
 
 export default LocationsMobile
