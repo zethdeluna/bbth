@@ -85,7 +85,7 @@ class App extends Component {
       imageGallery = <div><ImageGalleryMobile/></div>
       menu = (
         <div>
-          <div style={{position: "relative", width: "100vw", height: "110vh", zIndex: "-1" }}/>
+          <div style={{position: "relative", width: "100vw", height: "100vh", zIndex: "-1" }}/>
           <MenuMobile/>
         </div>
       );
