@@ -214,6 +214,11 @@ a {
     h2 a:hover {
         color: rgba(0 ,0, 0, 0.4);
     }
+    .anchor {
+        display: block;
+        padding-top: 12vh;
+        margin-top: -12vh;
+    }
 }
 
 #flyoutBackground {
@@ -337,25 +342,25 @@ a {
     flex-direction: column;
     position: relative;
     width: 100%;
-    height: 2000px;
+    height: 2200px;
     font-family: "JosefinSans";
     font-size: 34px;
-    border-top: 12vh solid white;
-
-    // background-image: url('./images/BonBonMenuMobile.jpg');
-    // background-size: contain;
-    // background-repeat: no-repeat;
+    // border-top: 12vh solid white;
+    // background-color: rgba(24, 2, 10, 0.4);
 
     .spacer {
         display: flex;
         position: relative;
         justify-content: center;
+        align-items: center;
         width: 100%;
-        height: 12vh;
+        height: 16vh;
         // background-color: rgba(0, 0, 240, 0.4);
 
-        span {
+        h2 {
             text-transform: uppercase;
+            font-size: 34px;
+            font-weight: 500;
         }
     }
     
@@ -380,7 +385,8 @@ a {
     }
 }
 
-// LOCATIONS SECTION
+// START LOCATIONS SECTION
+
 #locations-section {
     display: grid;
     grid-template-columns: 37.5vw 1fr;
@@ -537,6 +543,17 @@ a {
 }
 
 // END LOCATIONS
+
+// START MOBILE LOCATIONS
+
+#locationsMobile {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+// END MOBILE LOCATIONS
 
 
 // CUSTOM CURSOR
