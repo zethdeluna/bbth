@@ -14,7 +14,7 @@ function Navigation() {
             <div id="navbarLinks">
                 <ul>
                     <li><AnchorLink href="#menu-container">Menu</AnchorLink></li>
-                    <li><AnchorLink href="#sfv-map">Locations</AnchorLink></li>
+                    <li><AnchorLink href="#locationsContainer">Locations</AnchorLink></li>
                     <li>About</li>
                     <li>
                         <a href="https://www.instagram.com/bonbonteahouse/"
