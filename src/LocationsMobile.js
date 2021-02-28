@@ -3,6 +3,7 @@ import React from 'react';
 function LocationsMobile() {
     return (
         <div id="locationsMobile">
+            <h2>Locations</h2>
             <ul id="addresses">
                 <li>
                     <ul>

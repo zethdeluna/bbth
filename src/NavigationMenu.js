@@ -13,7 +13,7 @@ class NavigationMenu extends React.Component {
                     <h2><a href="#">About</a></h2>
                     <h2><a href="#menuMobile">Menu</a></h2>
                     <h2><a href="#locationsMobile">Locations</a></h2>
-                    <h2><a href="#">Instagram</a></h2>
+                    <h2><a href="https://www.instagram.com/bonbonteahouse/" target="_blank" rel="noreferrer">Instagram</a></h2>
                 </div>
             </div>
         )
