@@ -5,7 +5,8 @@ function Menu() {
     return (
         <div id="menu-container">
             <div className="spacer"/>
-            <img src={BonBonMenu}/>
+            <h2>Menu</h2>
+            <img id="menu-img" src={BonBonMenu} alt="Bon Bon Tea House Menu"/>
         </div>
     )
 }
