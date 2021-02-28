@@ -23,6 +23,20 @@ class NavigationMobile extends React.Component {
         this.toggleMenu();
         e.stopPropagation();
     }
+    componentDidMount() {
+        var prevScrollPos = window.pageYOffset;
+        if (window.innerWidth <= 780) {
+            window.onscroll = function() {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollPos > currentScrollPos) {
+                    document.getElementById("navbarMobile").style.transform = "translateY(0)";
+                } else {
+                    document.getElementById("navbarMobile").style.transform = "translateY(-12vh)";
+                }
+                prevScrollPos = currentScrollPos;
+            }
+        }
+    }
     render() {
         return (
             <div id="navbarMobile" className="fade-in">
