@@ -8,6 +8,8 @@ import Menu from './Menu';
 import MenuMobile from './MenuMobile';
 import Locations from './Locations';
 import LocationsMobile from './LocationsMobile';
+import About from './About.js';
+import AboutMobile from './AboutMobile.js';
 
 class App extends Component {
   constructor(props) {
@@ -78,7 +80,7 @@ class App extends Component {
 
   render() {    
     const width = this.state.width;
-    let navigation, imageGallery, menu, locations;
+    let navigation, imageGallery, menu, locations, about;
 
     if (width < 800) {
       navigation = <div><NavigationMobile/></div>;
@@ -90,6 +92,7 @@ class App extends Component {
         </div>
       );
       locations = <div><LocationsMobile/></div>
+      about = <div><AboutMobile/></div>
     } else {
       // // cursor effect on hover over links
       // const links = document.querySelectorAll('a,button');
@@ -123,7 +126,8 @@ class App extends Component {
       );
 
       menu = <div><Menu/></div>;
-      locations = <div><Locations/></div>
+      locations = <div><Locations/></div>;
+      about = <div><About/></div>;
     }
     return (
       <div className="App">
@@ -131,6 +135,7 @@ class App extends Component {
         {imageGallery}
         {menu}
         {locations}
+        {about}
       </div>
     );
   }

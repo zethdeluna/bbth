@@ -33,6 +33,7 @@ a {
     height: 12%;
     // background-color: rgba(0,0,0, 0.2);
     background-color: #fff;
+    transition: transform 300ms ease;
 
     #navbarName {
         font-family: "Exo2";
@@ -432,7 +433,7 @@ a {
     border-top: 12vh solid white;
     // background-color: rgba(0, 255, 0, 0.4);
 
-    .h2-container {
+    #locationsTitle {
         display: flex;
         width: 100%;
         height: 100px;
@@ -508,14 +509,14 @@ a {
                 #facebookNorthridge,
                 #facebookWinnetka,
                 #facebookChatsworth {
-                    pointer-events: none;
-                    opacity: 0;
-                    visibility: hidden;
-                    transform: translateY(30px);
-                    transition: 
-                        opacity 300ms ease,
-                        visibility 300ms ease,
-                        transform 400ms ease;
+                    // opacity: 0;
+                    // visibility: hidden;
+                    // transform: translateY(30px);
+                    // transition: 
+                    //     opacity 300ms ease,
+                    //     visibility 300ms ease,
+                    //     transform 400ms ease;
+                    padding: 8px 6px;
                 }
                 a, 
                 #yelpNorthridge.fade,
@@ -671,6 +672,65 @@ a {
 
 // END MOBILE LOCATIONS
 
+// START ABOUT PAGE
+
+#aboutPage {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 8vh;
+    border-right: 8vh;
+    border-left: 8vh;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    // background-color: rgba(240, 20, 100, 0.2);
+
+    h2 {
+        font-size: 48px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    #story {
+        margin: 0 10vh;
+        font-size: 16px;
+        line-height: 24px;
+        // background-color: rgba(0, 0, 0, 0.4);
+    }
+}
+
+// END ABOUT PAGE
+
+// START MOBILE ABOUT PAGE
+
+#aboutMobile {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 8vh;
+    border-right: 8vh;
+    border-left: 8vh;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        font-size: 34px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    #storyMobile {
+        margin: 0 5vh;
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+// END MOBILE ABOUT PAGE
 
 // CUSTOM CURSOR
 
