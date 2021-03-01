@@ -25,7 +25,7 @@ class NavigationMobile extends React.Component {
     }
     componentDidMount() {
         var prevScrollPos = window.pageYOffset;
-        if (window.innerWidth <= 800) {
+        if (window.innerWidth < 800) {
             window.onscroll = function() {
                 var currentScrollPos = window.pageYOffset;
                 if (prevScrollPos > currentScrollPos) {
