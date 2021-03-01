@@ -8,12 +8,16 @@ class Navigation extends React.Component {
         if (window.innerWidth >= 800) {
             window.onscroll = function() {
                 var currentScrollPos = window.pageYOffset;
-                if (prevScrollPos > currentScrollPos) {
+                if (currentScrollPos < 10) {
                     document.getElementById("navbar").style.transform = "translateY(0)";
                 } else {
-                    document.getElementById("navbar").style.transform = "translateY(-12vh)";
+                    if (prevScrollPos > currentScrollPos && currentScrollPos < document.body.scrollHeight - 10) {
+                        document.getElementById("navbar").style.transform = "translateY(0)";
+                    } else {
+                        document.getElementById("navbar").style.transform = "translateY(-12vh)";
+                    }
+                    prevScrollPos = currentScrollPos;
                 }
-                prevScrollPos = currentScrollPos;
             }
         }
     }
