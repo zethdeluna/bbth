@@ -132,6 +132,7 @@ a {
 // START MOBILE NAVIGATION
 
 #navbarMobile {
+    z-index: 24;
     display: flex;
     flex-direction: row;
     position: fixed;
