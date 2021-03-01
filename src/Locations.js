@@ -38,82 +38,74 @@ class Locations extends React.Component {
         img1.classList.remove("enlarged")
     }
 
-    onLocationClickNorthridge = e => {
-        const yelp = document.getElementById("yelpNorthridge");
-        const facebook = document.getElementById("facebookNorthridge");
+    // onLocationClickNorthridge = e => {
+    //     const yelp = document.getElementById("yelpNorthridge");
+    //     const facebook = document.getElementById("facebookNorthridge");
         
-        if (!this.state.clickActive) {
-            yelp.classList.add('fade');
-            facebook.classList.add('fade');
-            this.setState({
-                clickActive: true
-            })
-        } else {
-            yelp.classList.remove('fade');
-            facebook.classList.remove('fade');
-            this.setState({
-                clickActive: false
-            })
-        }
-    }
-    onLocationClickWinnetka = e => {
-        const yelp = document.getElementById("yelpWinnetka");
-        const facebook = document.getElementById("facebookWinnetka");
+    //     if (!this.state.clickActive) {
+    //         yelp.classList.add('fade');
+    //         facebook.classList.add('fade');
+    //         this.setState({
+    //             clickActive: true
+    //         })
+    //     } else {
+    //         yelp.classList.remove('fade');
+    //         facebook.classList.remove('fade');
+    //         this.setState({
+    //             clickActive: false
+    //         })
+    //     }
+    // }
+    // onLocationClickWinnetka = e => {
+    //     const yelp = document.getElementById("yelpWinnetka");
+    //     const facebook = document.getElementById("facebookWinnetka");
         
-        if (!this.state.clickActive) {
-            yelp.classList.add('fade');
-            facebook.classList.add('fade');
-            this.setState({
-                clickActive: true
-            })
-        } else {
-            yelp.classList.remove('fade');
-            facebook.classList.remove('fade');
-            this.setState({
-                clickActive: false
-            })
-        }
-    }
-    onLocationClickChatsworth = e => {
-        const yelp = document.getElementById("yelpChatsworth");
-        const facebook = document.getElementById("facebookChatsworth");
+    //     if (!this.state.clickActive) {
+    //         yelp.classList.add('fade');
+    //         facebook.classList.add('fade');
+    //         this.setState({
+    //             clickActive: true
+    //         })
+    //     } else {
+    //         yelp.classList.remove('fade');
+    //         facebook.classList.remove('fade');
+    //         this.setState({
+    //             clickActive: false
+    //         })
+    //     }
+    // }
+    // onLocationClickChatsworth = e => {
+    //     const yelp = document.getElementById("yelpChatsworth");
+    //     const facebook = document.getElementById("facebookChatsworth");
         
-        if (!this.state.clickActive) {
-            yelp.classList.add('fade');
-            facebook.classList.add('fade');
-            this.setState({
-                clickActive: true
-            })
-        } else {
-            yelp.classList.remove('fade');
-            facebook.classList.remove('fade');
-            this.setState({
-                clickActive: false
-            })
-        }
-    }
+    //     if (!this.state.clickActive) {
+    //         yelp.classList.add('fade');
+    //         facebook.classList.add('fade');
+    //         this.setState({
+    //             clickActive: true
+    //         })
+    //     } else {
+    //         yelp.classList.remove('fade');
+    //         facebook.classList.remove('fade');
+    //         this.setState({
+    //             clickActive: false
+    //         })
+    //     }
+    // }
 
     render() {
         return (
             <div id="locationsContainer">
-                <div className="h2-container"><h2>Locations</h2></div>
+                <div id="locationsTitle"><h2>Locations</h2></div>
                 <div id="locations-section">
                     <div id="locations">
                         <ul>
                             <li>
-                                <a id="northridge-yelp-link" href="https://www.yelp.com/biz/bon-bon-tea-house-los-angeles-2?osq=bon+bon+tea+house"
-                                target="_blank" rel="noreferrer">
-                                    <button id="yelpNorthridge"><i class="fab fa-yelp"></i></button>
-                                </a>
-                                <a id="northridge-facebook-link" href="https://www.facebook.com/bonbonteahouse/"
-                                target="_blank" rel="noreferrer">
-                                    <button id="facebookNorthridge"><i class="fab fa-facebook-f"></i></button>
-                                </a>
-                                <br/>
                                 <button id="northridge"
                                 onMouseEnter={this.onMouseEnterNorthridge}
                                 onMouseLeave={this.onMouseLeaveNorthridge}
-                                onClick={this.onLocationClickNorthridge}>
+                                // onClick={this.onLocationClickNorthridge}
+                                >
                                     Northridge
                                 </button>
                                 <br/>
@@ -123,21 +115,21 @@ class Locations extends React.Component {
                                 <br/>
                                 <span className="locations-item">(818) 280 - 6677</span>
                                 <br/>
+                                <a id="northridge-yelp-link" href="https://www.yelp.com/biz/bon-bon-tea-house-los-angeles-2?osq=bon+bon+tea+house"
+                                target="_blank" rel="noreferrer">
+                                    <button id="yelpNorthridge"><i class="fab fa-yelp"></i></button>
+                                </a>
+                                <a id="northridge-facebook-link" href="https://www.facebook.com/bonbonteahouse/"
+                                target="_blank" rel="noreferrer">
+                                    <button id="facebookNorthridge"><i class="fab fa-facebook-f"></i></button>
+                                </a>
                             </li>
                             <li>
-                                <a id="winnetka-yelp-link" href="https://www.yelp.com/biz/bon-bon-tea-house-canoga-park?osq=bon+bon+tea+house"
-                                target="_blank" rel="noreferrer">
-                                    <button id="yelpWinnetka"><i class="fab fa-yelp"></i></button>
-                                </a>
-                                <a id="winnetka-facebook-link" href="https://www.facebook.com/Bon-Bon-Tea-House-Canoga-Park-163592660677775/"
-                                target="_blank" rel="noreferrer">
-                                    <button id="facebookWinnetka"><i class="fab fa-facebook-f"></i></button>
-                                </a>
-                                <br/>
                                 <button id="winnetka"
                                 onMouseEnter={this.onMouseEnterWinnetka}
                                 onMouseLeave={this.onMouseLeaveWinnetka}
-                                onClick={this.onLocationClickWinnetka}>
+                                // onClick={this.onLocationClickWinnetka}
+                                >
                                     Winnetka
                                 </button>
                                 <br/>
@@ -146,21 +138,22 @@ class Locations extends React.Component {
                                 <span className="locations-item">Winnetka, CA 91306</span>
                                 <br/>
                                 <span className="locations-item">(818) 772 - 6900</span>
+                                <br/>
+                                <a id="winnetka-yelp-link" href="https://www.yelp.com/biz/bon-bon-tea-house-canoga-park?osq=bon+bon+tea+house"
+                                target="_blank" rel="noreferrer">
+                                    <button id="yelpWinnetka"><i class="fab fa-yelp"></i></button>
+                                </a>
+                                <a id="winnetka-facebook-link" href="https://www.facebook.com/Bon-Bon-Tea-House-Canoga-Park-163592660677775/"
+                                target="_blank" rel="noreferrer">
+                                    <button id="facebookWinnetka"><i class="fab fa-facebook-f"></i></button>
+                                </a>
                             </li>
                             <li>
-                                <a id="chatsworth-yelp-link" href="https://www.yelp.com/biz/bon-bon-tea-house-chatsworth?osq=bon+bon+tea+house"
-                                target="_blank" rel="noreferrer">
-                                    <button id="yelpChatsworth"><i class="fab fa-yelp"></i></button>
-                                </a>
-                                <a id="chatsworth-facebook-link" href="https://www.facebook.com/Bon-Bon-Tea-House-Chatsworth-278082143082955/"
-                                target="_blank" rel="noreferrer">
-                                    <button id="facebookChatsworth"><i class="fab fa-facebook-f"></i></button>
-                                </a>
-                                <br/>
                                 <button id="chatsworth"
                                 onMouseEnter={this.onMouseEnterChatsworth}
                                 onMouseLeave={this.onMouseLeaveChatsworth}
-                                onClick={this.onLocationClickChatsworth}>
+                                // onClick={this.onLocationClickChatsworth}
+                                >
                                     Chatsworth
                                 </button>
                                 <br/>
@@ -169,6 +162,15 @@ class Locations extends React.Component {
                                 <span className="locations-item">Chatsworth, CA 91311</span>
                                 <br/>
                                 <span className="locations-item">(818) 280 - 3362</span>
+                                <br/>
+                                <a id="chatsworth-yelp-link" href="https://www.yelp.com/biz/bon-bon-tea-house-chatsworth?osq=bon+bon+tea+house"
+                                target="_blank" rel="noreferrer">
+                                    <button id="yelpChatsworth"><i class="fab fa-yelp"></i></button>
+                                </a>
+                                <a id="chatsworth-facebook-link" href="https://www.facebook.com/Bon-Bon-Tea-House-Chatsworth-278082143082955/"
+                                target="_blank" rel="noreferrer">
+                                    <button id="facebookChatsworth"><i class="fab fa-facebook-f"></i></button>
+                                </a>
                             </li>
                         </ul>
                     </div>
