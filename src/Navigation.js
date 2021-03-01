@@ -13,11 +13,11 @@ function Navigation() {
             </div>
             <div id="navbarLinks">
                 <ul>
-                    <li><AnchorLink href="#menu-container">Menu</AnchorLink></li>
-                    <li><AnchorLink href="#locationsContainer">Locations</AnchorLink></li>
-                    <li>About</li>
+                    <li><AnchorLink className="AnchorLink" href="#menu-container">Menu</AnchorLink></li>
+                    <li><AnchorLink className="AnchorLink" href="#locationsContainer">Locations</AnchorLink></li>
+                    <li><AnchorLink className="AnchorLink" href="#imageGallery">About</AnchorLink></li>
                     <li>
-                        <a href="https://www.instagram.com/bonbonteahouse/"
+                        <a className="AnchorLink" href="https://www.instagram.com/bonbonteahouse/"
                         target="_blank" rel="noreferrer">
                             <button>
                                 <i class="fab fa-instagram"></i>
