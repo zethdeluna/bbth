@@ -27,7 +27,7 @@ const ImageGalleryMobile = () => {
         <div id="imageGalMobileContainer">
             <animated.div
             key={key}
-            class="imageGalMobile"
+            className="imageGalMobile"
             style={{ ...props, backgroundImage: `url(${item.img})`}}
             />
         </div>
