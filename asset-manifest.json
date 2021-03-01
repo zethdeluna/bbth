@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/bbth/static/css/main.aebfa78a.chunk.css",
-    "main.js": "/bbth/static/js/main.c12f4927.chunk.js",
-    "main.js.map": "/bbth/static/js/main.c12f4927.chunk.js.map",
+    "main.css": "/bbth/static/css/main.33545708.chunk.css",
+    "main.js": "/bbth/static/js/main.aba3ab22.chunk.js",
+    "main.js.map": "/bbth/static/js/main.aba3ab22.chunk.js.map",
     "runtime-main.js": "/bbth/static/js/runtime-main.13971906.js",
     "runtime-main.js.map": "/bbth/static/js/runtime-main.13971906.js.map",
     "static/js/2.b15253ef.chunk.js": "/bbth/static/js/2.b15253ef.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.e71938a6.chunk.js": "/bbth/static/js/3.e71938a6.chunk.js",
     "static/js/3.e71938a6.chunk.js.map": "/bbth/static/js/3.e71938a6.chunk.js.map",
     "index.html": "/bbth/index.html",
-    "static/css/main.aebfa78a.chunk.css.map": "/bbth/static/css/main.aebfa78a.chunk.css.map",
+    "static/css/main.33545708.chunk.css.map": "/bbth/static/css/main.33545708.chunk.css.map",
     "static/js/2.b15253ef.chunk.js.LICENSE.txt": "/bbth/static/js/2.b15253ef.chunk.js.LICENSE.txt",
     "static/media/BonBonMenu.067bfc64.jpg": "/bbth/static/media/BonBonMenu.067bfc64.jpg",
     "static/media/BonBonMenuMobile.6d77d62e.jpg": "/bbth/static/media/BonBonMenuMobile.6d77d62e.jpg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.13971906.js",
     "static/js/2.b15253ef.chunk.js",
-    "static/css/main.aebfa78a.chunk.css",
-    "static/js/main.c12f4927.chunk.js"
+    "static/css/main.33545708.chunk.css",
+    "static/js/main.aba3ab22.chunk.js"
   ]
 }
