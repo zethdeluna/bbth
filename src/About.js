@@ -8,12 +8,6 @@ function About() {
             </div>
             <div id="story">
                 <p>
-                    <em>DISCLAIMER: 
-                    <br/>
-                    This is not the official website for Bon Bon Tea House, 
-                    <br/>
-                    just a little project created by one of their workers who is beginning their journey as a web developer.</em>
-                    <br/><br/>
                     What is my perfect crime?
                     <br/><br/>
                     I break into Bon Bon Tea House at midnight. Do I go for the vault? No, I go for the boba. It's priceless.
@@ -24,6 +18,12 @@ function About() {
                     gets interesting. I tell Ms. Tea House to meet me in Paris by the Trocadero. She's been waiting for me all 
                     these years. She's never had another milk tea. I don't care. I don't show up. I go to Berlin. 
                     That's were I stashed the boba.
+                    <br/><br/>
+                    <em>DISCLAIMER: 
+                    <br/>
+                    This is not the official website for Bon Bon Tea House, 
+                    <br/>
+                    just a little project created by one of their workers who is beginning their journey as a web developer.</em>
                 </p>
             </div>
         </div>
