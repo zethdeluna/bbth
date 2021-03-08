@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import './ImageGalleryMobile.scss';
 import { useTransition, animated, config } from 'react-spring';
-import testimg1 from './images/testimg1.png';
-import testimg2 from './images/testimg2.jpg';
-import testimg3 from './images/testimg3.jpg';
-import testimg4 from './images/testimg4.jpg';
-import testimg5 from './images/testimg5.jpg';
+import testimg1 from '../../images/testimg1.png';
+import testimg2 from '../../images/testimg2.jpg';
+import testimg3 from '../../images/testimg3.jpg';
+import testimg4 from '../../images/testimg4.jpg';
+import testimg5 from '../../images/testimg5.jpg';
 
 const slides = [
     { id: 0, img: testimg1 },

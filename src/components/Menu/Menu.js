@@ -1,5 +1,6 @@
 import React from 'react';
-import BonBonMenu from './images/BonBonMenu.jpg'
+import './Menu.scss';
+import BonBonMenu from '../../images/BonBonMenu.jpg'
 
 function Menu() {
     return (

@@ -1,4 +1,5 @@
 import React from 'react';
+import './NavigationMobile.scss';
 
 class NavigationMenu extends React.Component {
     render() {

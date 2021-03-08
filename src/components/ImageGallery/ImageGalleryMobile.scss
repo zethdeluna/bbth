@@ -1,0 +1,15 @@
+// 
+// Mobile Image Gallery Style
+// 
+
+.imageGalMobile {
+    z-index: -1;
+    position: absolute;
+    width: 100vw;
+    height: 88vh;
+    top: 12vh;
+    background-size: cover;
+    background-position: center;
+    will-change: opacity;
+    // background-color: rgba(0, 0, 0, 0.4);
+}

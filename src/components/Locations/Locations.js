@@ -1,6 +1,7 @@
 import React from 'react';
-import sfvMap from './images/sfvMap.png';
-import bonbonlogo from './images/bonbonlogo.png';
+import './Locations.scss';
+import sfvMap from '../../images/sfvMap.png';
+import bonbonlogo from '../../images/bonbonlogo.png';
 
 class Locations extends React.Component {
     constructor(props) {

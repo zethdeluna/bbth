@@ -1,12 +1,13 @@
 import React from 'react';
+import './About.scss';
 
-function AboutMobile() {
+function About() {
     return (
-        <div id="aboutMobile">
-            <div id="titleMobile">
+        <div id="aboutPage">
+            <div id="title">
                 <h2>About</h2>
             </div>
-            <div id="storyMobile">
+            <div id="story">
                 <p>
                     What is my perfect crime?
                     <br/><br/>
@@ -22,11 +23,12 @@ function AboutMobile() {
                     <em>DISCLAIMER: 
                     <br/>
                     This is not the official website for Bon Bon Tea House, 
-                    just a little project created by one of their team members who is beginning their journey as a web developer.</em>
+                    <br/>
+                    just a little project created by one of their workers who is beginning their journey as a web developer.</em>
                 </p>
             </div>
         </div>
     )
 }
 
-export default AboutMobile
+export default About

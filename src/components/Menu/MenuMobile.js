@@ -1,5 +1,6 @@
 import React from 'react';
-import BonBonMenuMobile from './images/BonBonMenuMobile.jpg';
+import './MenuMobile.scss';
+import BonBonMenuMobile from '../../images/BonBonMenuMobile.jpg';
 
 function MenuMobile() {
     return (

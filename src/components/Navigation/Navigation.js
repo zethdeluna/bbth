@@ -1,6 +1,7 @@
 import React from 'react';
+import './Navigation.scss';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import bonbonlogo from './images/bonbonlogo.png';
+import bonbonlogo from '../../images/bonbonlogo.png';
 
 class Navigation extends React.Component {
     componentDidMount() {

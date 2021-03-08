@@ -1,6 +1,6 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import bonbonlogo from './images/bonbonlogo.png';
+import bonbonlogo from '../../images/bonbonlogo.png';
 import NavigationButton from './NavigationButton';
 import NavigationMenu from './NavigationMenu';
 

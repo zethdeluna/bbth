@@ -1,0 +1,49 @@
+// 
+// Navigation Page Style
+// 
+
+.img-gal-container {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    // background-color: rgba(0, 255, 0, 0.4);
+
+    .gallery-wrap {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 88%;
+        align-self: flex-end;
+
+        .img-gal {
+            width: 20%;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            background-repeat: none;
+            transition: width 350ms ease;
+        }
+        .img-gal:hover {
+            width: 100%;
+        }
+
+        .gal-img1 {
+            background-image: url('../../images/testimg1.png');
+        }
+        .gal-img2 {
+            background-image: url('../../images/testimg2.jpg');
+        }
+        .gal-img3 {
+            background-image: url('../../images/testimg3.jpg');
+        }
+        .gal-img4 {
+            background-image: url('../../images/testimg4.jpg');
+        }
+        .gal-img5 {
+            background-image: url('../../images/testimg5.jpg');
+        }
+     }
+
+}
