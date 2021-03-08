@@ -1,15 +1,5 @@
 import React, { Component } from 'react';
 import './App.scss';
-// import Navigation from './Navigation';
-// import NavigationMobile from './NavigationMobile';
-// import ImageGallery from './ImageGallery';
-// import ImageGalleryMobile from './ImageGalleryMobile';
-// import Menu from './Menu';
-// import MenuMobile from './MenuMobile';
-// import Locations from './Locations';
-// import LocationsMobile from './LocationsMobile';
-// import About from './About.js';
-// import AboutMobile from './AboutMobile.js';
 import {
   Navigation, NavigationMobile,
   ImageGallery, ImageGalleryMobile,
