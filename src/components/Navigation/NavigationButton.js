@@ -9,16 +9,6 @@ class NavigationButton extends React.Component {
         }
         return (
             <div id="navButtonContainer" onMouseDown={this.props.handleMouseDown}>
-                {/* <button id="navButton" onMouseDown={this.props.handleMouseDown}></button> */}
-                {/* <label for="check">
-                    <input 
-                    type="checkbox" 
-                    id="check"
-                    /> 
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label> */}
                 <div id="navButton">
                     <span className={visibility}/>
                     <span className={visibility}/>

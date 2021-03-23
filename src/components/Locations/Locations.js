@@ -39,61 +39,6 @@ class Locations extends React.Component {
         img1.classList.remove("enlarged")
     }
 
-    // onLocationClickNorthridge = e => {
-    //     const yelp = document.getElementById("yelpNorthridge");
-    //     const facebook = document.getElementById("facebookNorthridge");
-        
-    //     if (!this.state.clickActive) {
-    //         yelp.classList.add('fade');
-    //         facebook.classList.add('fade');
-    //         this.setState({
-    //             clickActive: true
-    //         })
-    //     } else {
-    //         yelp.classList.remove('fade');
-    //         facebook.classList.remove('fade');
-    //         this.setState({
-    //             clickActive: false
-    //         })
-    //     }
-    // }
-    // onLocationClickWinnetka = e => {
-    //     const yelp = document.getElementById("yelpWinnetka");
-    //     const facebook = document.getElementById("facebookWinnetka");
-        
-    //     if (!this.state.clickActive) {
-    //         yelp.classList.add('fade');
-    //         facebook.classList.add('fade');
-    //         this.setState({
-    //             clickActive: true
-    //         })
-    //     } else {
-    //         yelp.classList.remove('fade');
-    //         facebook.classList.remove('fade');
-    //         this.setState({
-    //             clickActive: false
-    //         })
-    //     }
-    // }
-    // onLocationClickChatsworth = e => {
-    //     const yelp = document.getElementById("yelpChatsworth");
-    //     const facebook = document.getElementById("facebookChatsworth");
-        
-    //     if (!this.state.clickActive) {
-    //         yelp.classList.add('fade');
-    //         facebook.classList.add('fade');
-    //         this.setState({
-    //             clickActive: true
-    //         })
-    //     } else {
-    //         yelp.classList.remove('fade');
-    //         facebook.classList.remove('fade');
-    //         this.setState({
-    //             clickActive: false
-    //         })
-    //     }
-    // }
-
     render() {
         return (
             <div id="locationsContainer">
@@ -101,14 +46,11 @@ class Locations extends React.Component {
                 <div id="locations-section">
                     <div id="locations">
                         <ul>
-                            <li>
-                                <button id="northridge"
-                                onMouseEnter={this.onMouseEnterNorthridge}
-                                onMouseLeave={this.onMouseLeaveNorthridge}
-                                // onClick={this.onLocationClickNorthridge}
-                                >
-                                    Northridge
-                                </button>
+                            <li
+                            onMouseEnter={this.onMouseEnterNorthridge}
+                            onMouseLeave={this.onMouseLeaveNorthridge}
+                            >
+                                <span className="loc">Northridge</span>
                                 <br/>
                                 <span className="locations-item">9663 Reseda Blvd</span>
                                 <br/>
@@ -125,14 +67,11 @@ class Locations extends React.Component {
                                     <button id="facebookNorthridge"><i class="fab fa-facebook-f"></i></button>
                                 </a>
                             </li>
-                            <li>
-                                <button id="winnetka"
-                                onMouseEnter={this.onMouseEnterWinnetka}
-                                onMouseLeave={this.onMouseLeaveWinnetka}
-                                // onClick={this.onLocationClickWinnetka}
-                                >
-                                    Winnetka
-                                </button>
+                            <li 
+                            onMouseEnter={this.onMouseEnterWinnetka}
+                            onMouseLeave={this.onMouseLeaveWinnetka}
+                            >
+                                <span className="loc">Winnetka</span>
                                 <br/>
                                 <span className="locations-item">8316 Winnetka Ave</span>
                                 <br/>
@@ -149,14 +88,11 @@ class Locations extends React.Component {
                                     <button id="facebookWinnetka"><i class="fab fa-facebook-f"></i></button>
                                 </a>
                             </li>
-                            <li>
-                                <button id="chatsworth"
-                                onMouseEnter={this.onMouseEnterChatsworth}
-                                onMouseLeave={this.onMouseLeaveChatsworth}
-                                // onClick={this.onLocationClickChatsworth}
-                                >
-                                    Chatsworth
-                                </button>
+                            <li
+                            onMouseEnter={this.onMouseEnterChatsworth}
+                            onMouseLeave={this.onMouseLeaveChatsworth}
+                            >
+                                <span className="loc">Chatsworth</span>
                                 <br/>
                                 <span className="locations-item">20790 Nordhoff St</span>
                                 <br/>
